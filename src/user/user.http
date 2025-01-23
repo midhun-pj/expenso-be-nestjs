@@ -1,0 +1,27 @@
+### Create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "midhun@gmail.com",
+    "password": "midhun123"
+}
+
+### Sign in a user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "asdmidhun@gmail.com",
+    "password": "midhun123"
+}
+
+### Find a  user
+GET http://localhost:3000/auth/6
+
+### Find all users with email
+GET http://localhost:3000/auth?email=midhun+1@qburst.com
+
+
+### Remove a user
+DELETE  http://localhost:3000/auth/1
